@@ -1,0 +1,120 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+body { 
+    /* background-image: url(../pictures/background4.jpg);  */
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* margin: 0 auto; */
+    background-repeat: initial;
+    background-color: #cccccc; 
+}
+p1 { 
+    display: block;
+    font-size: 50px;
+    color: #2e445f;
+    font-family: 'Noto Serif', serif;
+    margin: 25px;
+    text-shadow: 1px 2px 1px rgb(77, 73, 73);
+} 
+input {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 31.375rem;
+    border: 2px solid #2e445f;
+    font-size: 3rem;
+    text-align: right;
+    background-color: #c8cdb5;
+    color: #2e445f;
+    outline-width: 0;
+    border-radius: 10%;
+    font-family: 'Noto Serif', serif;
+}
+.numbers button, .operators button {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    margin-top: 10px;
+    border: 2px  #2e445f solid;
+    outline-width: 0;
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+    background-color: #c8cdb5;
+    border-radius: 20%;
+    color: #2e445f;
+}
+button.big-button {
+    height: 202px;
+}
+button.clear {
+    background-color: #d7bea0;
+}
+button.result {
+    background-color: #d7bea0;
+}
+button:hover {
+    border-color: #4d6077;
+}
+button:active {
+    font-weight: bold;
+    background-color:#ecb493;
+}
+.left-panel, .right-panel {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.4rem;
+}
+
+/* smaller devices */
+ @media screen and (max-width: 800px) and (min-width: 400px) { 
+    p1 {
+        display: block;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 35px;
+    }
+    input {
+        margin-top: 30px;
+        width: 350px;
+        border: 1px solid #13171f;
+        font-size: 2rem;
+    }
+    .numbers button, .operators button {
+        width: 4rem;
+        height: 4rem;
+        margin-top: 25px;
+        font-size: 25px;
+    }
+    button.big-button {
+        height: 9.55rem;
+    }
+}
+
+@media screen and (max-width: 400px) and (min-width: 200px) { 
+    p1 {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        margin: 35px;
+    }
+    input {
+        margin-top: 30px;
+        width: 250px;
+        border: 1px solid #13171f;
+        font-size: 2rem;
+    }
+    .numbers button, .operators button {
+        width: 3rem;
+        height: 3rem;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    button.big-button {
+        height: 7.15rem;
+    }
+}

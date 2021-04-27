@@ -1,0 +1,322 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+    text-align: center;
+} 
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue); 
+    background-image: linear-gradient(
+        50deg,
+        rgba(224, 206, 216, 0.8),
+        rgba(185, 171, 178, 0.1)
+      ), 
+      url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+header {  
+    text-align: center; 
+    padding-top: 40px;
+    position: inherit;
+} 
+#title {
+    font-size: 40px;
+    /* display: block; */
+    position: relative;
+}
+#description {
+    font-size: 20px;
+    padding: 10px;
+    font-style: italic;
+}
+#survey {
+    background-color: #d7ccc8;
+    text-align: center;
+    position: relative;
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 30px;
+    width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    top: 60px;
+    margin-bottom: 100px;
+    /* display: block; */
+}
+form {
+    margin-bottom: 10px;
+}
+label { 
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+.question {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; 
+ }
+.clue {
+    margin-left: 0.25rem;
+    font-size: 15px;
+    color: #ce5e5e;
+  }
+.form_group {
+    padding: 10px;
+}
+.form_data {
+    width: 100%;
+    display: block;
+    padding: 3px; 
+    background-clip: padding-box;
+    border: 1px solid #718497;
+    background-color: #ebdddd;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 17px;
+}
+#dropdown {
+    width: 101%;
+    display: block;
+    padding: 3px; 
+    background-clip: padding-box;
+    border: 1px solid #718497;
+    background-color: #ebdddd;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 17px;
+}
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    margin-right: 10px;
+    min-height: 15px;
+    min-width: 15px;
+    border: 1px solid #718497;
+    background-color: #ebdddd;
+}
+.input-textarea {
+    display: inline-block;
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    padding: 5px;
+    background-clip: padding-box;
+    border: 1px solid #718497;
+    background-color: #ebdddd;
+    border-radius: 10px;
+}
+button {
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #718497;
+    background-color: #c29090;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: rgb(216, 63, 88);
+}
+
+/* MEDIA QUERIES */
+  
+@media (max-width:850px){
+    header {  
+        padding-top: 30px;
+    } 
+    #title {
+        font-size: 20px;
+    }
+    #description {
+        font-size: 15px;
+        padding: 5px;
+    }
+    #survey {
+        padding: 5px;
+        width: 300px;
+        top: 50px;
+        margin-bottom: 100px;
+    }
+    form {
+        margin-bottom: 10px;
+    }
+    label { 
+        font-size: 15px;
+        margin-bottom: 0.3rem;
+      }
+    .question {
+        font-size: 1.0rem;
+        margin-bottom: 0.5rem; 
+     }
+    .clue {
+        font-size: 10px;
+      }
+    .form_data {
+        padding: 3px; 
+        height: 20px;
+        font-size: 15px;
+    }
+    #dropdown {
+        padding: 3px; 
+        height: 30px;
+        font-size: 15px;
+    }
+    .input-radio,
+    .input-checkbox {
+        margin-right: 10px;
+        min-height: 15px;
+        min-width: 15px;
+    }
+    .input-textarea {
+        display: block;
+        width: 95%;
+        min-height: 80px;
+        padding: 6px;
+    }
+    button {
+        width: 80px;
+        height: 40px;
+        padding: 7px;
+    }
+}
+
+@media (max-width:500px){
+    header {  
+        padding-top: 30px;
+    } 
+    #title {
+        font-size: 20px;
+    }
+    #description {
+        font-size: 15px;
+        padding: 5px;
+    }
+    #survey {
+        padding: 5px;
+        width: 300px;
+        top: 50px;
+        margin-bottom: 100px;
+    }
+    form {
+        margin-bottom: 10px;
+    }
+    label { 
+        font-size: 15px;
+        margin-bottom: 0.3rem;
+      }
+    .question {
+        font-size: 1.0rem;
+        margin-bottom: 0.5rem; 
+     }
+    .clue {
+        font-size: 10px;
+      }
+    .form_data {
+        padding: 3px; 
+        height: 20px;
+        font-size: 15px;
+    }
+    #dropdown {
+        padding: 3px; 
+        height: 30px;
+        font-size: 15px;
+    }
+    .input-radio,
+    .input-checkbox {
+        margin-right: 10px;
+        min-height: 15px;
+        min-width: 15px;
+    }
+    .input-textarea {
+        display: block;
+        width: 95%;
+        min-height: 80px;
+        padding: 6px;
+    }
+    button {
+        width: 80px;
+        height: 40px;
+        padding: 7px;
+    }
+}
+
+@media (max-width:300px){
+    header {  
+        padding-top: 25px;
+    } 
+    #title {
+        font-size: 18px;
+    }
+    #description {
+        font-size: 13px;
+        padding: 5px;
+    }
+    #survey {
+        padding: 5px;
+        width: 250px;
+        top: 40px;
+        margin-bottom: 100px;
+    }
+    form {
+        margin-bottom: 10px;
+    }
+    label { 
+        font-size: 15px;
+        margin-bottom: 0.3rem;
+      }
+    .question {
+        font-size: 1.0rem;
+        margin-bottom: 0.5rem; 
+     }
+    .clue {
+        font-size: 10px;
+      }
+    .form_data {
+        padding: 3px; 
+        height: 20px;
+        font-size: 15px;
+    }
+    #dropdown {
+        padding: 3px; 
+        height: 30px;
+        font-size: 15px;
+    }
+    .input-radio,
+    .input-checkbox {
+        margin-right: 10px;
+        min-height: 15px;
+        min-width: 15px;
+    }
+    .input-textarea {
+        display: block;
+        width: 95%;
+        min-height: 80px;
+        padding: 6px;
+    }
+    button {
+        width: 80px;
+        height: 40px;
+        padding: 7px;
+    }
+}

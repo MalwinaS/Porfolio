@@ -1,0 +1,523 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto Slab, Arial;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #E6E6FA;
+  background-color: #b8aeae;
+  background-color: #d0cdcd;
+}
+#container{
+  max-width: 1000px;
+  margin: 0px auto;
+  background-color: #fafafa;
+}
+header img{
+  width: 100%;
+  display: block;
+}
+nav{
+  background-color: #fafafa;
+  /* overflow: hidden; */
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 0;
+}
+nav a{
+  display: block;
+  float: center;
+  transition: all 1s ease;
+}
+a.menu{
+  display: inline-block;
+  width: 24%;
+  padding: 15px 30px 15px 30px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  /* float: center; */
+}
+a.menu:hover{
+  font-size: 23px;
+  padding: 0;
+  float: center;
+  cursor: pointer;
+}
+article h1{
+  margin: 10px 10% 10px 10%;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+}
+hr{
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  padding: 0;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 54px;
+}
+.active{
+  background-color: none;
+}
+article p{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: justify;
+  padding: 15px 0;
+  line-height: 25px;
+}
+img.left{
+  padding: 10px 10px 10px 10px;
+  float: left;
+  width: 40%;
+  border-radius: 15%;
+  margin: 10px 10px 10px 10px;
+}
+article {
+  height: 160vh;
+}
+/*  
+#scena{
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+  position: relative;
+  perspective: 1000px;
+  padding: 0px 0px 0px 200px;
+}
+#kostka{
+  position: absolute;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  animation: obracaniekostki 10s infinite alternate;
+}
+.ściana{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+div.front{
+  background-image: url('images/kostka/front.png');
+  transform: translateZ(100px);
+  padding: 0px;
+}
+div.back{
+  background-image: url('images/kostka/back.png');
+  transform: rotateX(180deg) translateZ(100px);
+  padding: 0px;
+}
+div.left{
+  background-image: url('images/kostka/left.png');
+  transform: rotateY(-90deg) translateZ(100px);
+  padding: 0px;
+}
+div.right{
+  background-image: url('images/kostka/right.png');
+  transform: rotateY(90deg) translateZ(100px);
+  padding: 0px;
+}
+div.top{
+  background-image: url('images/kostka/top.png');
+  transform: rotateX(90deg) translateZ(100px);
+  padding: 0px;
+}
+div.bottom{
+  background-image: url('images/kostka/bottom.png');
+  transform: rotateX(-90deg) translateZ(100px);
+  padding: 0px;
+}
+@keyframes obracaniekostki {
+  from
+  {
+  }
+  to
+  {
+  transform: rotateY(360deg) rotateX(360deg);
+  }
+  }
+ */
+
+article p.tekst0{
+  margin: 20px;
+  text-align: justify;
+  padding-top: 40px 20px 20px 20px;
+}
+article p.tekst1{
+  margin: 20px;
+  text-align: justify;
+  padding-top: 20px 20px 20px 20px;
+}
+article p.tekst2{
+    margin: 20px;
+    text-align: justify;
+    padding-top: 30px 20px 20px 20px;
+}
+img.center{
+  padding: 20px;
+  float: right;
+  width: 35%;
+  margin: 10px 10px 10px 10px;
+  border-radius: 0% 30% 0% 30%;
+}
+h2{
+  text-align: center;
+}
+article p.ciekawostka1{
+  margin: 10px;
+  text-align: justify;
+  padding: 10px;
+}
+footer{
+  text-align: center;
+  height: 20px;
+  width: 100%;
+  /* line: 20px; */
+  font-size: 25px;
+  overflow: visible;
+  color: #E6E6FA;
+  float: left;
+  display: block;
+  margin: 0px;
+}
+#lower{
+  background-image: url('../images/dolna(2).png');
+  width: 1000px;
+  height: 135px;
+  margin: 0px;
+  padding: 0px;
+  content: 0px;
+}
+#tekst_newsletter{
+  font-size: 20px;
+  color: #E6E6FA;
+  font-weight: normal;
+  text-align: center;
+  padding: 15px;
+}
+#form_newsletter{
+  margin-top: 0px;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#newsletter_info{
+  margin: 15px;
+  text-align: center;
+  font-size: 15px;
+}
+.input_text{
+  background-color: #E6E6FA;
+  font-size: 15px;
+  border: 0px;
+}
+.submit_button{
+  padding: 3px;
+  margin: 5px;
+  font-size: 10px;
+  font-style: arial;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px outset #E6E6FA;
+}
+.submit_button:hover{
+  color: rgb(65, 63, 63);
+}
+.submit_button:active{
+  border: 2px inset #E6E6FA;
+}
+#copyright{
+  margin-bottom: 0px;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: black;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:800px){
+  a.menu{
+    width: 100%;
+    padding: 0;
+  }
+  article {
+    height: 170vh;
+  }
+  article h1{
+    font-size: 20px;
+  }
+  hr{
+  display: none;
+  }
+  #lower{
+    width: 100%;
+    height: 130px;
+  }
+  #tekst_newsletter {
+    font-size: 15px;
+    margin-top: 1px;
+  }
+  #form_newsletter{
+    font-size: 10px;
+    padding-left: 1px;
+    padding-top: 5px;
+  }
+  #newsletter_info{
+    margin: 10px;
+    font-size: 10px;
+  }
+  .input_text{
+    background-color: #E6E6FA;
+    font-size: 10px;
+  }
+  .submit_button{
+    padding: 3px;
+    font-size: 7px;
+    border: 1px outset #E6E6FA;
+  }
+  #copyright{
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+    padding-bottom: 2px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width:500px){
+  a.menu{
+    width: 100%;
+    padding: 0;
+  }
+  article {
+    height: 200vh;
+  }
+  article h1{
+    font-size: 20px;
+  }
+  hr{
+    display: none;
+  }
+  #lower{
+    width: 100%;
+    height: 130px;
+  }
+  #tekst_newsletter {
+    font-size: 15px;
+    margin-top: 1px;
+  }
+  #form_newsletter{
+    font-size: 10px;
+    padding-left: 1px;
+    padding-top: 5px;
+  }
+  #newsletter_info{
+    margin: 10px;
+    font-size: 10px;
+  }
+  .input_text{
+    background-color: #E6E6FA;
+    font-size: 10px;
+  }
+  .submit_button{
+    padding: 3px;
+    font-size: 7px;
+    border: 1px outset #E6E6FA;
+  }
+  #copyright{
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+    padding-bottom: 2px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width:350px){
+  a.menu{
+    width: 100%;
+    padding: 0;
+  }
+  article {
+    height: 250vh;
+  }
+  article h1{
+    font-size: 20px;
+  }
+  hr{
+    display: none;
+  }
+  #lower{
+    width: 100%;
+    height: 130px;
+  }
+  #tekst_newsletter {
+    font-size: 15px;
+    margin-top: 1px;
+  }
+  #form_newsletter{
+    font-size: 10px;
+    padding-left: 1px;
+    padding-top: 5px;
+  }
+  #newsletter_info{
+    margin: 10px;
+    font-size: 10px;
+  }
+  .input_text{
+    background-color: #E6E6FA;
+    font-size: 10px;
+  }
+  .submit_button{
+    padding: 3px;
+    font-size: 7px;
+    border: 1px outset #E6E6FA;
+  }
+  #copyright{
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+    padding-bottom: 2px;
+    font-size: 10px;
+  }
+}
+
+@media (min-height:700px){
+  article {
+    height: 170vh;
+  }
+}
+
+@media (min-height:800px) and (max-height:900px){
+  article {
+    height: 160vh;
+  }
+}
+
+/* 
+@media (max-width:800px){
+  #scena{
+    width: 200px;
+    height: 200px;
+    margin: 10ss0px;
+    position: relative;
+    perspective: 1000px;
+    padding: 0px 0px 0px 50px;
+  }
+  #kostka{
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    animation: obracaniekostki 10s infinite alternate;
+  }
+  .ściana{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  div.front{
+    background-image: url('images/kostka/front.png');
+    transform: translateZ(100px);
+    padding: 0px;
+  }
+  div.back{
+    background-image: url('images/kostka/back.png');
+    transform: rotateX(180deg) translateZ(100px);
+    padding: 0px;
+  }
+  div.left{
+    background-image: url('images/kostka/left.png');
+    transform: rotateY(-90deg) translateZ(100px);
+    padding: 0px;
+  }
+  div.right{
+    background-image: url('images/kostka/right.png');
+    transform: rotateY(90deg) translateZ(100px);
+    padding: 0px;
+  }
+  div.top{
+    background-image: url('images/kostka/top.png');
+    transform: rotateX(90deg) translateZ(100px);
+    padding: 0px;
+  }
+  div.bottom{
+    background-image: url('images/kostka/bottom.png');
+    transform: rotateX(-90deg) translateZ(100px);
+    padding: 0px;
+  }
+@keyframes obracaniekostki {
+  from
+  {
+  }
+  to
+  {
+  transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+
+@media (max-width:500px){
+  #scena{
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    position: relative;
+    perspective: 1000px;
+    padding: 0px 0px 0px 20px;
+  }
+  #kostka{
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    animation: obracaniekostki 10s infinite alternate;
+  }
+  .ściana{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  div.front{
+    background-image: url('images/kostka/front.png');
+    transform: translateZ(100px);
+    padding: 0px;
+  }
+  div.back{
+    background-image: url('images/kostka/back.png');
+    transform: rotateX(180deg) translateZ(100px);
+    padding: 0px;
+  }
+  div.left{
+    background-image: url('images/kostka/left.png');
+    transform: rotateY(-90deg) translateZ(100px);
+    padding: 0px;
+  }
+  div.right{
+    background-image: url('images/kostka/right.png');
+    transform: rotateY(90deg) translateZ(100px);
+    padding: 0px;
+  }
+  div.top{
+    background-image: url('images/kostka/top.png');
+    transform: rotateX(90deg) translateZ(100px);
+    padding: 0px;
+  }
+  div.bottom{
+    background-image: url('images/kostka/bottom.png');
+    transform: rotateX(-90deg) translateZ(100px);
+    padding: 0px;
+  }
+@keyframes obracaniekostki {
+  from
+  {
+  }
+  to
+  {
+  transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+*/

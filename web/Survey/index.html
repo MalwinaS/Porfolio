@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scales=1.0">
+	<meta name="Culinary Camp" content="Tu wpisz opis zawartości strony">
+    <title>Culinary Camp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+    <header>
+        <h1 id="title">Culinary Camp Survey Form</h1>
+        <p id="description">Thank you for helping us to improve our system</p>
+    </header>
+    
+    <div id="survey">
+        <form id="survey-form">
+            <div class="form_group">
+                <label id="name-label">Name</label>
+                    <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form_data"
+                    placeholder="Enter your name"
+                    required
+                />
+            </div>
+            <div class="form_group">
+                <label id="email-label">Email</label>
+                    <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form_data"
+                    placeholder="Enter your Email"
+                    required
+                 />
+            </div>
+            <div class="form_group">
+                <label id="number-label">Age</label>
+                    <input
+                    type="number"
+                    name="age"
+                    id="number"
+                    class="form_data"
+                    min="16"
+                    max="100"
+                    placeholder="Age"
+                 />
+            </div> 
+            <div class="form_group">
+                <p class="question">What is your current role?</p>
+                    <select id="dropdown" name="current_role">
+                        <option disabled selected value>Your current role</option>
+                        <option value="student">Student</option>
+                        <option value="full_time_job">Full-time job</option>
+                        <option value="prefer_not_to_say">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+            </div>
+            <div class="form_group">
+                <p class="question">Can you recomend Culinary Camp?</p>
+                    <label>
+                        <input
+                        name="user_recommend"
+                        value="definitely"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                        />Definitely
+                    </label>
+                    <label>
+                        <input
+                        name="user_recommend"
+                        value="maybe"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                        />Maybe
+                    </label>
+                    <label>
+                        <input
+                        name="user_recommend"
+                        value="not_sure"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                        />I am not sure
+                    </label>
+            </div>
+            <div class="form_group">
+                <p class="question">What do you like the most during this Camp?</p>
+                    <select id="dropdown" name="things">
+                        <option disabled selected value>Choose option</option>
+                        <option value="knowing_new_people">Knowing new people</option>
+                        <option value="atmosphere">Atmosphere</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="receipts">Receipts</option>
+                    </select>
+            </div>
+            <div class="form_group">
+                <p class="question">What would you like to see improved? </br>
+                    <span class="clue">(Check all that apply)</span></p>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="desserts"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Desserts
+                    </label>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="coctails"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Coctails
+                    </label>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="vegan_food"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Vegan food
+                    </label>
+                    <label>
+                        <input
+                        name="prefer"
+                        value="healhfy_snacks"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Healhfy snacks
+                    </label>
+            </div>
+            <div class="form_group">
+                <p class="question">Sharing your ideas with us</p>
+                    <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Enter your comment here"
+                    ></textarea>
+            </div>
+            <div class="form_group">
+                <button
+                type="submit"
+                id="submit"
+                class="submit-button">
+                Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

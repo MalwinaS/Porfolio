@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="DateofToday();">
+
+    <div class="final-date">
+        <h1>Final date</h1>
+        <input type="datetime-local" id="final-date-input">
+        <button id="countdown-button">Count</button>
+    </div>
+
+    <div id="message">
+        <h2>Time is up!</h2>
+    </div>
+
+    <div class="clock-container">
+        <div class="cell">
+            <h3>Days</h3>
+            <h1 id="days">-</h1>
+        </div>
+        <div class="cell">
+            <h3>Hours</h3>
+            <h1 id="hours">-</h1>
+        </div>
+        <div class="cell">
+            <h3>Minutes</h3>
+            <h1 id="minutes">-</h1>
+        </div>
+        <div class="cell">
+            <h3>Seconds</h3>
+            <h1 id="seconds">-</h1>
+        </div>
+    </div>
+
+    <div class="today-date">
+        <h2>Today date</h2>
+        <div id="clock">Clock</div>
+    </div>
+    
+    <script src="code.js"></script>
+</body>
+</html>

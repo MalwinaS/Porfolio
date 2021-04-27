@@ -1,0 +1,36 @@
+h2{
+  margin: 25px;
+}
+.contact-details {
+  display: block;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+.contact-details {
+  transition: transform 0.3s linear;
+}
+.contact-details:hover { 
+  transform: translateY(10px);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:800px){
+  #kontakt{
+    height: 50%;
+  }
+}
+
+@media (max-width:500px){
+  #kontakt{
+    height: 50%;
+  }
+}

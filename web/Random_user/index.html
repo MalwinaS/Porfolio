@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random user</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="wrapper">
+    <h2>Random user</h2>
+    <div class="user-profile">
+        <div class="row">
+            <div class="column">
+                <img id="avatar-img" src="" alt="">
+            </div>
+            <div class="column">
+                <div id="full-name">Full name</div>
+                <div id="username">User name</div>
+                <div id="user-details">
+                    <div id="email">Email</div>
+                    <div id="country">Country</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            fetch("https://randomuser.me/api")
+            .then(response => response.json())
+            .then(data => dataReady(data))
+        }
+
+        function dataReady(data) {
+            console.log(data);
+            var result = data.results[0];
+            
+            var fullname = result.name.title + " "
+                + result.name.first + " "
+                + result.name.last;
+            document.getElementById("full-name").innerHTML = fullname;
+            
+            var img = result.picture.large;
+            document.getElementById("avatar-img").src = img;
+
+            var username = result.login.username;
+            document.getElementById("username").innerHTML = "@" + username;
+
+            var email = result.email;
+            document.getElementById("email").innerHTML = email;
+
+            var country = result.location.timezone.description;
+            document.getElementById("country").innerHTML = country;
+        }
+
+    </script>
+</body>
+</html>

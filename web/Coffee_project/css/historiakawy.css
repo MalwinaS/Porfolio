@@ -1,0 +1,43 @@
+#tree {
+    width: 426px;
+    height: 284px;
+    border-radius: 10px;
+    float: right;
+    padding: 25px;
+}
+#history{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 25px;
+}
+h2{
+    margin: 25px auto 0px auto;
+    font-size: 25px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:800px){
+    #tree {
+        width: 213px;
+        height: 142px;
+        float: center;
+    }
+    h2{
+        font-size: 20px;
+    }
+  }
+  
+  @media (max-width:500px){
+    #tree {
+        width: 213px;
+        height: 142px;
+        float: center;
+    }
+    h2{
+        font-size: 20px;
+    }
+  }

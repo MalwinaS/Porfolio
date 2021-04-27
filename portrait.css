@@ -1,0 +1,388 @@
+@media (max-width: 359px) and (orientation: portrait) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #welcome-section {
+        background-image: url(../images/background/woman_circle_500.png);
+        background-repeat: no-repeat;
+    }
+    nav {
+        position: block;
+        justify-content: center;
+        padding: 15px 0px;
+    }
+    #nav li { 
+        padding: 15px;
+    }
+    #nav li:hover {
+        padding-top: 15px;
+    }
+    a {
+        font-size: 15px;
+    }
+    #logo {
+        display: none;
+    }
+    #title {
+        height: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    #projects-section {
+        height: 330vw;
+    }
+    #projects-link {
+        position: absolute;
+        bottom: 0px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        height: 60px;
+    }    
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+        text-align: center;
+    }
+    .images:hover {
+        display: none;
+    }
+    .images {
+        width: 60%;
+        height: 60%;
+        transition: none;
+    }
+    figcaption {
+        font-size: 10px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+    #contact-section {
+        align-items: center;
+        height: 85vh;
+    } 
+    h4 {
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    .contact-links {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 140px;
+        font-size: 18px;
+    }
+    .contact-details:hover { 
+        transform: none;
+        color: rgb(41, 19, 19);
+    }
+    .contact-details {
+        transition: none;
+        padding: 15px;
+    }
+    footer {
+        font-size: 12px;
+        text-align: center;
+        padding: 3px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 499px) and (orientation: portrait) { 
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #welcome-section {
+        background-image: url(../images/background/woman_circle_700.png);
+        background-repeat: no-repeat;
+    }
+    nav {
+        position: block;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+    #nav li { 
+        padding: 20px;
+    }
+    #nav li:hover {
+        padding-top: 20px;
+    }
+    a {
+        font-size: 16px;
+    }
+    #logo {
+        display: none;
+    }
+    #title {
+        height: 70vw;
+        margin: 4vw;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    #projects-section {
+        height: 330vw;
+    }
+    #projects-link {
+        position: absolute;
+        bottom: 0px;
+    }
+    h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        height: 60px;
+    }   
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+        text-align: center;
+        margin: 5px; 
+    }
+    /* .images:hover {
+      display: none;
+    }   */
+    .images {
+        width: 60%;
+        height: 60%;
+        transition: none;
+    }
+    figcaption {
+        font-size: 10px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+    #contact-section {
+        align-items: center;
+        height: 85vh;
+    } 
+    h4 {
+        font-size: 25px;
+    }
+    .contact-links {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 140px;
+        font-size: 18px;
+    }
+    .contact-details:hover { 
+        transform: none;
+        color: rgb(41, 19, 19);
+    }
+    .contact-details {
+        transition: none;
+        padding: 20px;
+    }
+    footer {
+        font-size: 14px;
+        text-align: center;
+        padding: 3px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 999px) and (orientation: portrait) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #welcome-section {
+        background-image: url(../images/background/woman_circle_1000.png);
+        background-repeat: no-repeat;
+    }
+    nav {
+        position: block;
+        justify-content: center;
+        padding: 25px 0px;
+    }
+    #nav li { 
+        padding: 25px;
+    }
+    #nav li:hover {
+        padding-top: 25px;
+    }
+    a {
+        font-size: 20px;
+    }
+    #logo {
+        display: none;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    #projects-section {
+        height: 165vw;
+    }
+    #projects-link {
+        position: absolute;
+        bottom: 0px;
+    }
+    h3 {
+        font-size: 35px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        height: 60px;
+    }  
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .wrapper > #empty {
+        display: grid;
+    }
+    .images:hover {
+        display: none;
+    }
+    .images {
+        width: 60%;
+        height: 60%;
+        transition: none;
+    }
+    figcaption {
+        font-size: 10px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+    #contact-section {
+        align-items: center;
+        height: 92vh;
+    } 
+    h4 {
+        font-size: 35px;
+    }
+    .contact-links {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 140px;
+        font-size: 18px;
+    }
+    .contact-details:hover { 
+        transform: none;
+        color: rgb(41, 19, 19);;
+    }
+    .contact-details {
+        transition: none;
+        padding: 20px;
+    }
+    footer {
+        font-size: 16px;
+        text-align: center;
+        padding: 3px;
+    }
+}
+
+@media (min-width: 1000px) and (orientation: portrait) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #welcome-section {
+        background-image: url(../images/background/woman.png);
+        background-repeat: no-repeat;
+    }
+    nav {
+        position: block;
+        justify-content: center;
+        padding: 35px 0px;
+    }
+    #nav li { 
+        padding: 35px;
+    }
+    #nav li:hover {
+        padding-top: 35px;
+    }
+    a {
+        font-size: 30px;
+    }
+    #logo {
+        display: none;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    #projects-link {
+        position: absolute;
+        bottom: 0px;
+    }
+    #projects-section {
+        height: 100vh;
+    }
+    h3 {
+        font-size: 35px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 8vh;
+    }   
+    .wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    /* .images:hover {
+        opacity: 0;
+    } */
+    .images {
+        width: 70%;
+        height: 70%;
+        transition: none;
+    }
+    figcaption {
+        font-size: 25px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+    #contact-section {
+        align-items: center;
+        height: 90vh;
+    } 
+    h4 {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    .contact-links {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 250px;
+        font-size: 18px;
+    }
+    .contact-details:hover { 
+        transform: none;
+        color: rgb(41, 19, 19);;
+    }
+    .contact-details {
+        transition: none;
+        padding: 35px;
+    }
+    footer {
+        font-size: 20px;
+        text-align: center;
+        padding: 3px;
+    }
+}
